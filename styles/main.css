@@ -1,0 +1,35 @@
+body {
+  background-color: #008080;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('/images/bliss.jpg'); /* your Vista wallpaper */
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+}
+
+.desktop {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.shortcut {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 64px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.shortcut img {
+  width: 48px;
+  height: 48px;
+}
