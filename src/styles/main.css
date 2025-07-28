@@ -78,3 +78,8 @@ html, body {
   text-align: center;
   overflow: hidden;
 }
+
+#modal-content {
+  max-height: 80vh;
+  overflow-y: auto;
+}
