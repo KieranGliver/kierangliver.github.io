@@ -4,7 +4,6 @@ function openModal(title, page) {
   const contentEl = document.getElementById('modal-content');
 
   titleEl.textContent = title;
-  modal.style.display = 'block';
 
   fetch(`/pages/${page}`)
     .then(res => res.text())
@@ -12,6 +11,9 @@ function openModal(title, page) {
     .catch(() => contentEl.innerHTML = "<p>Could not load content.</p>");
 
   location.hash = `#/${title}`;
+  setTimeout(() => {
+        modal.style.display = 'block';
+      }, 50);
 }
 
 function closeModal() {
