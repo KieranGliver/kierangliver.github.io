@@ -72,10 +72,10 @@ html, body {
     inset -2px -2px 0 #fff,
     inset 2px 2px 0 #999,
     2px 2px 8px rgba(0, 0, 0, 0.3);
-  padding-right: 16px;
-  padding-left: 16px;
-  font-family: 'Verdana', sans-serif;
-  text-align: center;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  padding-left: 2px;
+  padding-right: 2px;
   overflow: hidden;
 }
 
