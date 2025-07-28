@@ -55,3 +55,12 @@ html, body {
   background-color: rgba(0, 0, 255, 0.4);
   border-radius: 3px;
 }
+
+.absolute-center {
+  z-index: 1;
+  width: 66vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
