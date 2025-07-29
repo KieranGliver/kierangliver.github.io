@@ -3,7 +3,7 @@ layout: desktop-layout.njk
 ---
 
 <!-- Shortcuts -->
-<div class="desktop">
+<div class="relative z-[1] w-full h-full p-5 flex flex-col gap-5">
   <a class="shortcut" data-page="profile">
     <img src="/assets/images/icons/profile.png" alt="Profile icon" />
     <span>Profile</span>
@@ -21,7 +21,11 @@ layout: desktop-layout.njk
 </div>
 
 <!-- Modal Window -->
-<div id="window-modal" class="window absolute-center" style="display: none">
+<div
+  id="window-modal"
+  class="window z-10 w-2/3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+  style="display: none"
+>
   <div class="title-bar">
     <div id="modal-title" class="title-bar-text">A Complete Window</div>
     <div class="title-bar-controls">
@@ -30,5 +34,8 @@ layout: desktop-layout.njk
       <button aria-label="Close"></button>
     </div>
   </div>
-  <div id="modal-content" class="window-body"></div>
+  <div
+    id="modal-content"
+    class="window-body max-h-[80vh] overflow-y-auto"
+  ></div>
 </div>

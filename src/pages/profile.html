@@ -1,117 +1,38 @@
-<style>
-  .container {
-    display: flex;
-    flex-direction: row;
-    padding: 4px;
-    gap: 8px;
-  }
-
-  .input-row {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    flex: 1;
-    justify-content: center;
-    text-align: left;
-  }
-
-  .input-row input {
-    font-size: 20px;
-    height: 36px;
-    padding: 4px 8px;
-    box-sizing: border-box;
-  }
-
-  .button-row {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    justify-content: flex-end;
-  }
-
-  input[readonly] {
-    opacity: 1;
-    color: black !important;
-    background-color: white !important;
-  }
-
-  hr {
-    border: none;
-    height: 1px;
-    background: #3d3d3d;
-    margin: 8px 0;
-    opacity: 0.6;
-  }
-
-  .social-shortcut {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    width: 48px;
-    text-align: center;
-    color: grey;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: small;
-  }
-
-  .social-shortcut img {
-    width: 32px;
-    height: 32px;
-  }
-
-  .quote {
-    margin: 10px auto;
-    max-width: 600px;
-    font-style: italic;
-    font-size: 1.3em;
-    color: #555;
-    background: #f0f0f0;
-    padding: 16px 24px;
-    border-left: 4px solid grey;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    border-radius: 6px;
-  }
-
-  .accent {
-    color: #008080;
-  }
-</style>
-
-<div class="container">
-  <div class="input-row">
+<div class="flex flex-row p-1 gap-2">
+  <div class="flex flex-col gap-3 flex-1 justify-center text-left">
     <span>Enter the name of the user you wish to get info about:</span>
-    <input id="name" type="text" value="Kieran Glover" readonly />
+    <input id="name" type="text" value="Kieran Glover" />
   </div>
-  <div class="button-row">
+  <div class="flex flex-col gap-[4px] justify-between">
     <button disabled>OK</button>
     <button>Close</button>
   </div>
 </div>
-<hr />
+<hr class="divider" />
 <dl class="status-bar">
   <div class="status-bar-field">
     <dt>Status:</dt>
-    <dd class="accent">Hacking together games & fake OSes</dd>
+    <dd class="text-[#008080]">Hacking together games & random websites</dd>
   </div>
   <div class="status-bar-field">
     <dt>Education:</dt>
-    <dd class="accent">B.C.Sc Graduate, University of Waterloo</dd>
+    <dd class="text-[#008080]">B.C.Sc Graduate, University of Waterloo</dd>
   </div>
   <div class="status-bar-field">
     <dt>Currently Playing:</dt>
-    <dd class="accent">Europa Universalis IV | Kenshi</dd>
+    <dd class="text-[#008080]">Europa Universalis IV | Kenshi</dd>
   </div>
 </dl>
 
-<blockquote class="quote">
+<blockquote
+  class="my-2 mx-auto max-w-[600px] text-[#555] bg-[#f0f0f0] px-6 py-4 border-l-4 border-gray-500 shadow rounded text-center"
+>
   "Good artists copy, great artists steal" — Pablo Picasso
 </blockquote>
-<hr />
+<hr class="divider" />
 <h5>Personal Profile:</h5>
-<div class="window-content" style="padding: 5px 10px">
-  <p><strong>👋 Hi, I'm Kieran.</strong></p>
+<div class="window-content flex flex-col gap-2 p-[1rem]">
+  <p><strong>Hi, I'm Kieran.</strong></p>
 
   <p>
     I'm a developer and game designer focused on building interactive systems
@@ -130,10 +51,9 @@
   </p>
 
   <p>Right now, I’m working on:</p>
-  <ul>
+  <ul style="list-style-type: disc; margin-left: 1.5rem">
     <li>
-      <strong
-        >🃏
+      <strong>
         <a href="https://opeope.gg" target="_blank"
           >A One Piece card game deck builder</a
         ></strong
@@ -142,13 +62,13 @@
       TCG
     </li>
     <li>
-      <strong>🕹 A rouge-like deckbuilder RTS</strong> – currently prototyping
+      <strong>A rouge-like deckbuilder RTS</strong> – currently prototyping
       building systems and procedural map layouts, with a focus on dynamic
       card-driven gameplay
     </li>
     <li>
-      <strong>📦 Godot development tools</strong> – currently includes a node
-      based sound manager with volume controls, http request system for handling
+      <strong>Godot Systems Toolkit</strong> – currently includes a node based
+      sound manager with volume controls, http request system for handling
       requests and more
     </li>
   </ul>
@@ -164,8 +84,8 @@
     <a href="mailto:kieran.r.glover@gmail.com">kieran.r.glover@gmail.com</a>!
   </p>
 </div>
-<hr />
-<div class="container" style="justify-content: center; gap: 20%">
+<hr class="divider" />
+<div class="flex flex-row p-1 justify-center gap-[20%]">
   <a
     href="https://github.com/kierangliver"
     target="_blank"
