@@ -7,8 +7,8 @@ function openModal(title, page) {
 
   fetch(`/pages/${page}`)
     .then(res => res.text())
-    .then(html => contentEl.innerHTML = html)
-    .catch(() => contentEl.innerHTML = '<p>Could not load content.</p>');
+    .then(html => (contentEl.innerHTML = html))
+    .catch(() => (contentEl.innerHTML = '<p>Could not load content.</p>'));
 
   location.hash = `#/${title}`;
   setTimeout(() => {
@@ -31,7 +31,9 @@ document.querySelectorAll('.shortcut').forEach(shortcut => {
   });
 });
 
-const closeBtn = document.querySelector('#window-modal button[aria-label="Close"]');
+const closeBtn = document.querySelector(
+  '#window-modal button[aria-label="Close"]',
+);
 closeBtn.addEventListener('click', () => {
   const modal = document.getElementById('window-modal');
   modal.style.display = 'none';
@@ -45,7 +47,7 @@ window.addEventListener('load', () => {
   }
 });
 
-document.addEventListener('mousemove', (e) => {
+document.addEventListener('mousemove', e => {
   const x = (e.clientX / window.innerWidth - 0.5) * 20;
   const y = (e.clientY / window.innerHeight - 0.5) * 20;
 
