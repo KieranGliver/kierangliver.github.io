@@ -1,25 +1,42 @@
 {
   "name": "kieranglover.github.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "Personal portfolio website built with Eleventy",
   "main": "index.js",
   "scripts": {
     "build": "eleventy",
-    "serve": "eleventy --serve"
+    "serve": "eleventy --serve",
+    "clean": "rimraf _site",
+    "lint": "eslint src/scripts/**/*.js",
+    "lint:fix": "eslint src/scripts/**/*.js --fix",
+    "format": "prettier --write \"src/**/*.{js,css,html,md,njk}\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KieranGliver/kieranglover.github.io.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "portfolio",
+    "website",
+    "eleventy",
+    "static-site"
+  ],
+  "author": "Kieran Glover <kieran.r.glover@gmail.com>",
+  "license": "MIT",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/KieranGliver/kieranglover.github.io/issues"
   },
-  "homepage": "https://github.com/KieranGliver/kieranglover.github.io#readme",
+  "homepage": "https://kieranglover.github.io",
   "dependencies": {
     "@11ty/eleventy": "^3.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.0.0",
+    "rimraf": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
