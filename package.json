@@ -4,12 +4,13 @@
   "description": "Personal portfolio website built with Eleventy",
   "main": "index.js",
   "scripts": {
-    "build": "eleventy",
-    "serve": "eleventy --serve",
+    "build": "npm run tailwindcss && eleventy",
+    "serve": "npm run tailwindcss && eleventy --serve",
     "clean": "rimraf _site",
     "lint": "eslint src/scripts/**/*.js",
     "lint:fix": "eslint src/scripts/**/*.js --fix",
-    "format": "prettier --write \"src/**/*.{js,css,html,md,njk}\""
+    "format": "prettier --write \"src/**/*.{js,css,html,md,njk}\"",
+    "tailwindcss": "tailwindcss -i ./src/styles/main.css -o ./src/styles/bundle.css --minify"
   },
   "repository": {
     "type": "git",
@@ -29,7 +30,9 @@
   },
   "homepage": "https://kieranglover.github.io",
   "dependencies": {
-    "@11ty/eleventy": "^3.1.2"
+    "@11ty/eleventy": "^3.1.2",
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
     "eslint": "^8.57.0",
