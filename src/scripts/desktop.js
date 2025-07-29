@@ -8,15 +8,17 @@ function openModal(title, page) {
   fetch(`/pages/${page}`)
     .then(res => res.text())
     .then(html => contentEl.innerHTML = html)
-    .catch(() => contentEl.innerHTML = "<p>Could not load content.</p>");
+    .catch(() => contentEl.innerHTML = '<p>Could not load content.</p>');
 
   location.hash = `#/${title}`;
   setTimeout(() => {
-        modal.style.display = 'block';
-      }, 50);
+    modal.style.display = 'block';
+  }, 50);
 }
 
+// eslint-disable-next-line no-unused-vars
 function closeModal() {
+  const modal = document.getElementById('window-modal');
   modal.style.display = 'none';
   location.hash = '';
 }
@@ -38,9 +40,8 @@ closeBtn.addEventListener('click', () => {
 
 window.addEventListener('load', () => {
   const hash = location.hash.slice(2);
-  console.log(hash)
   if (hash) {
-    openModal(hash, hash.toLowerCase())
+    openModal(hash, hash.toLowerCase());
   }
 });
 
