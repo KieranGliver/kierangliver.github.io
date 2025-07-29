@@ -19,7 +19,7 @@ body {
   left: 0;
   width: 110%;
   height: 110%;
-  background-image: url('/images/bliss.jpg');
+  background-image: url('/assets/images/bliss.jpg');
   background-size: cover;
   background-position: center;
   transform: translateZ(-1px) scale(1.05);
