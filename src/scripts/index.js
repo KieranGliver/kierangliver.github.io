@@ -32,7 +32,7 @@ document.querySelectorAll('.shortcut').forEach(shortcut => {
 });
 
 const closeBtn = document.querySelector(
-  '#window-modal button[aria-label="Close"]',
+  '#window-modal button[aria-label="Close"]'
 );
 closeBtn.addEventListener('click', () => {
   const modal = document.getElementById('window-modal');
