@@ -71,4 +71,4 @@ This project is licensed under the MIT License.
 **Kieran Glover**
 - Email: kieran.r.glover@gmail.com
 - GitHub: [@KieranGliver](https://github.com/KieranGliver)
-- Portfolio: [kieranglover.github.io](https://kieranglover.github.io)
+- Portfolio: [Kieranglover.com](https://kieranglover.com)
