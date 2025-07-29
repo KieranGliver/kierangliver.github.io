@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>{{ title or "Desktop" }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://unpkg.com/98.css">
-  <link rel="stylesheet" href="/styles/main.css" />
-  <link rel="icon" type="image/ico" href="/images/favicon.ico">
-</head>
-<body>
-  {{ content | safe }}
-  <script src="/scripts/desktop.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ title or "Desktop" }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="icon" type="image/ico" href="/images/favicon.ico" />
+  </head>
+  <body>
+    {{ content | safe }}
+    <script src="/scripts/desktop.js"></script>
+  </body>
 </html>
