@@ -140,3 +140,6 @@ vite.config.ts.timestamp-*
 
 # Ignore eleventy output when doing manual tests
 _site/
+
+# Ignore Tailwind CSS build output
+src/styles/bundle.css

@@ -1,0 +1,35 @@
+.shortcut {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 4rem;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.shortcut img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.shortcut:hover span {
+  background-color: rgba(0, 0, 255, 0.4);
+  border-radius: 3px;
+}
+
+.social-shortcut {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 3rem;
+  text-align: center;
+  color: grey;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-shortcut img {
+  width: 2rem;
+  height: 2rem;
+}

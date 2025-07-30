@@ -1,38 +1,41 @@
 ---
 layout: desktop-layout.njk
-title: 'Kieran Glover'
 ---
 
-<div id="parallax-container">
-  <div id="background-layer"></div>
-  <!-- Shortcuts -->
-  <div class="desktop">
-    <a class="shortcut" data-page="profile">
-      <img src="/images/icons/profile.png" alt="Profile icon" />
-      <span>Profile</span>
-    </a>
+<!-- Shortcuts -->
+<div class="relative z-[1] w-full h-full p-5 flex flex-col gap-5">
+  <a class="shortcut" data-page="profile">
+    <img src="/assets/images/icons/profile.png" alt="Profile icon" />
+    <span>Profile</span>
+  </a>
 
-    <a class="shortcut" data-page="devlog">
-      <img src="/images/icons/devlog.png" alt="Devlog icon" />
-      <span>Devlog</span>
-    </a>
+  <a class="shortcut" data-page="devlog">
+    <img src="/assets/images/icons/devlog.png" alt="Devlog icon" />
+    <span>Devlog</span>
+  </a>
 
-    <a class="shortcut" data-page="games">
-      <img src="/images/icons/games.png" alt="Games icon" />
-      <span>Games</span>
-    </a>
-  </div>
+  <a class="shortcut" data-page="games">
+    <img src="/assets/images/icons/games.png" alt="Games icon" />
+    <span>Games</span>
+  </a>
+</div>
 
-  <!-- Modal Window -->
-  <div id="window-modal" class="window absolute-center" style="display: none">
-    <div class="title-bar">
-      <div id="modal-title" class="title-bar-text">A Complete Window</div>
-      <div class="title-bar-controls">
-        <button aria-label="Minimize"></button>
-        <button aria-label="Maximize"></button>
-        <button aria-label="Close"></button>
-      </div>
+<!-- Modal Window -->
+<div
+  id="window-modal"
+  class="window z-10 w-2/3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+  style="display: none"
+>
+  <div class="title-bar">
+    <div id="modal-title" class="title-bar-text">A Complete Window</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
     </div>
-    <div id="modal-content" class="window-body"></div>
   </div>
+  <div
+    id="modal-content"
+    class="window-body max-h-[80vh] overflow-y-auto"
+  ></div>
 </div>
