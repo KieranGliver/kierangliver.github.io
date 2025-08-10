@@ -1,4 +1,4 @@
-# Kieran Glover - Personal Portfolio
+# [Kieran Glover - Personal Portfolio](https://kieranglover.com)
 
 A modern, interactive portfolio website built with [Eleventy](https://www.11ty.dev/) featuring a retro desktop-inspired interface.
 
