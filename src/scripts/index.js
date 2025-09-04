@@ -2,7 +2,7 @@ import { openModal, closeModal } from './modal.js';
 import { setupParallax } from './parallax.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.shortcut').forEach(shortcut => {
+  document.querySelectorAll('#shortcut').forEach(shortcut => {
     shortcut.addEventListener('click', () => {
       const page = shortcut.dataset.page;
       const title = shortcut.querySelector('span').textContent;

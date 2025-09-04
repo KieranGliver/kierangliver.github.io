@@ -4,19 +4,19 @@ layout: desktop-layout.njk
 
 <!-- Shortcuts -->
 <div class="relative z-[1] w-full h-full p-5 flex flex-col gap-5">
-  <a class="shortcut" data-page="profile">
+  <a id="shortcut" class="shortcut" data-page="profile">
     <img src="/assets/images/icons/profile.png" alt="Profile icon" />
     <span>Profile</span>
   </a>
 
-  <a class="shortcut" data-page="devlog">
-    <img src="/assets/images/icons/devlog.png" alt="Devlog icon" />
-    <span>Devlog</span>
-  </a>
-
-  <a class="shortcut" data-page="games">
+  <a id="shortcut" class="shortcut" data-page="games">
     <img src="/assets/images/icons/games.png" alt="Games icon" />
     <span>Games</span>
+  </a>
+
+  <a class="shortcut" href='http://opeope.gg'>
+    <img src="/assets/images/icons/opeope.png" alt="Opeope icon" />
+    <span>Opeope.gg</span>
   </a>
 </div>
 
@@ -36,6 +36,6 @@ layout: desktop-layout.njk
   </div>
   <div
     id="modal-content"
-    class="window-body max-h-[80vh] overflow-y-auto"
+    class="window-body"
   ></div>
 </div>
